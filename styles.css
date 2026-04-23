@@ -1,0 +1,61 @@
+:root {
+  --bg: #f8f4ef;
+  --card: #fff;
+  --text: #2a221d;
+  --accent: #b9734c;
+  --line: #e8ddd3;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.45;
+}
+.container { width: min(1100px, 92%); margin: 0 auto; }
+.header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 0;
+}
+.logo { font-weight: 800; letter-spacing: 0.08em; }
+.menu { list-style: none; display: flex; gap: 18px; padding: 0; margin: 0; }
+.menu a { text-decoration: none; color: inherit; }
+.btn {
+  background: var(--accent); color: #fff; border: 0;
+  padding: 10px 16px; border-radius: 999px; text-decoration: none; display: inline-block;
+}
+.btn-outline { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.hero { padding: 40px 0 26px; }
+.hero-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 26px; }
+.hero-card, .card, .price-card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px;
+}
+.eyebrow { color: var(--accent); font-weight: 700; }
+h1 { margin: 8px 0 12px; font-size: clamp(30px, 4vw, 46px); }
+.actions { display: flex; gap: 12px; margin-top: 16px; }
+.section { padding: 28px 0; }
+.section-soft { background: #f2eae2; }
+.tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.tags span {
+  background: #fff; border: 1px solid var(--line); border-radius: 999px;
+  padding: 8px 12px; font-size: 14px;
+}
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.check { padding-left: 18px; }
+.price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.price { font-size: 30px; font-weight: 800; margin: 8px 0; }
+.section-form { background: #fff; border-top: 1px solid var(--line); }
+.form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+input, select {
+  width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 10px;
+  background: #fff;
+}
+.form-grid button { grid-column: 1 / -1; justify-self: start; }
+.consent { font-size: 13px; color: #6f6157; }
+.footer { border-top: 1px solid var(--line); padding: 18px 0; margin-top: 20px; }
+
+@media (max-width: 840px) {
+  .menu { display: none; }
+  .hero-grid, .two-col, .price-grid, .form-grid { grid-template-columns: 1fr; }
+}

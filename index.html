@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Home — сеть студий йоги и фитнеса</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header container">
+    <div class="logo">YOGA HOME</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#directions">Направления</a></li>
+        <li><a href="#massage">Массаж</a></li>
+        <li><a href="#about">О студии</a></li>
+        <li><a href="#passport">Паспорт YH</a></li>
+        <li><a href="#partners">Партнеры</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#trial">Записаться</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Сеть студий в Красноярске</p>
+          <h1>Уютная йога и фитнес-студия для тела, здоровья и баланса</h1>
+          <p class="lead">Собрали ту же логику блоков и структуру: направления, задачи клиентов, тарифы, преподаватели, филиалы и формы заявок.</p>
+          <div class="actions">
+            <a class="btn" href="#trial">Пробное занятие</a>
+            <a class="btn btn-outline" href="#subscription">Абонементы</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Почему к нам приходят</h3>
+          <ul>
+            <li>Боль из-за сидячего образа жизни</li>
+            <li>Подтянуть тело, убрать лишний вес</li>
+            <li>Реабилитация после травм</li>
+            <li>Беспокойный ум и тревожность</li>
+            <li>Восстановление после декрета</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="directions" class="section container">
+      <h2>Все направления</h2>
+      <div class="tags">
+        <span>Горячая растяжка</span><span>Растяжка и МФР</span><span>Йога в гамаке</span><span>Йога Нидра</span>
+        <span>Здоровая спина</span><span>Горячий пилатес</span><span>Хатха йога</span><span>Бикрам йога</span>
+        <span>Виньяса йога</span><span>Инь йога</span><span>Медитация</span><span>Силовой класс</span>
+      </div>
+    </section>
+
+    <section id="about" class="section section-soft">
+      <div class="container two-col">
+        <div>
+          <h2>О студии</h2>
+          <p>Команда сертифицированных преподавателей, разные форматы занятий и удобные филиалы по городу. Практики подойдут как начинающим, так и опытным.</p>
+          <ul class="check">
+            <li>Малые группы и персональный подход</li>
+            <li>Комфортные залы и безопасный темп</li>
+            <li>Утренние и вечерние классы</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Филиалы</h3>
+          <p>Ладо Кецховели, 34</p>
+          <p>78 Добровольческой Бригады, 23</p>
+          <p>Пушкина, 22а</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="passport" class="section container">
+      <h2>Паспорт YH</h2>
+      <div class="price-grid">
+        <article class="price-card"><h3>Пробное</h3><p class="price">500 ₽</p><p>1 занятие на выбор</p></article>
+        <article class="price-card"><h3>Стандарт</h3><p class="price">4 900 ₽</p><p>8 занятий / 30 дней</p></article>
+        <article class="price-card"><h3>Безлимит</h3><p class="price">7 900 ₽</p><p>Любые занятия / 30 дней</p></article>
+      </div>
+    </section>
+
+    <section id="partners" class="section section-soft">
+      <div class="container">
+        <h2>Партнеры и вакансии</h2>
+        <div class="two-col">
+          <div class="card">
+            <h3>Для партнеров</h3>
+            <p>Открыты к совместным проектам, коллаборациям и партнерским программам.</p>
+          </div>
+          <div class="card">
+            <h3>Вакансии</h3>
+            <p>Ищем инструкторов, администраторов и массажистов в действующие студии.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="massage" class="section container">
+      <h2>Запишитесь на массаж</h2>
+      <div class="tags">
+        <span>Общий массаж</span><span>Массаж спины</span><span>Лимфодренажный</span><span>Антицеллюлитный</span><span>Парный массаж</span>
+      </div>
+    </section>
+
+    <section id="trial" class="section section-form">
+      <div class="container">
+        <h2>Запишитесь на пробное занятие</h2>
+        <form class="form-grid">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="Телефон" required>
+          <select>
+            <option>Стройное тело</option>
+            <option>Баланс души и тела</option>
+            <option>Здоровье</option>
+          </select>
+          <select>
+            <option>Ладо Кецховели, 34</option>
+            <option>78 Добровольческой Бригады, 23</option>
+            <option>Пушкина, 22а</option>
+          </select>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+        <p class="consent">Я согласен на обработку персональных данных и получение информационных материалов.</p>
+      </div>
+    </section>
+
+    <section id="subscription" class="section section-form">
+      <div class="container">
+        <h2>Оставьте заявку на абонемент</h2>
+        <form class="form-grid">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="Телефон" required>
+          <select>
+            <option>Ладо Кецховели, 34</option>
+            <option>78 Добровольческой Бригады, 23</option>
+            <option>Пушкина, 22а</option>
+          </select>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Yoga Home, 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
